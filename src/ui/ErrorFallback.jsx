@@ -35,7 +35,7 @@ const Box = styled.div`
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyles />
       <StyledErrorFallback>
         <Box>
           <Heading as="h1">Something went wrong 🧐</Heading>

@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 
-import GlobalStyle from "./styles/GlobalStyle";
+import GlobalStyles from "./styles/GlobalStyle";
 import Dashboard from "./pages/Dashboard";
 import Bookings from "./pages/Bookings";
 import Cabins from "./pages/Cabins";
@@ -33,7 +33,7 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
 
-        <GlobalStyle />
+        <GlobalStyles />
         <BrowserRouter>
           <Routes>
             <Route
